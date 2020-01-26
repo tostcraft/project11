@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 14300000}
   - component: {fileID: 11400000}
   - component: {fileID: 5400000}
+  - component: {fileID: 7423544067768633872}
   - component: {fileID: 8200000}
   m_Layer: 0
   m_Name: FPSController
@@ -51,6 +52,7 @@ MonoBehaviour:
   healthTexture: {fileID: 0}
   armourTexture: {fileID: 0}
   staminaTexture: {fileID: 0}
+  pistol: {fileID: 0}
   walkSpeed: 10
   runSpeed: 20
 --- !u!143 &14300000
@@ -211,6 +213,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7423544067768633872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a2fb664e5221d4caa7509f55195566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -320,6 +338,7 @@ GameObject:
   - component: {fileID: 8100000}
   - component: {fileID: 12474086}
   - component: {fileID: 8475366081236994217}
+  - component: {fileID: 6901370219633308717}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -413,3 +432,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodTexture: {fileID: 0}
+--- !u!45 &6901370219633308717
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: bf1bf92a3ce592e40b898be6c21cc2fa, type: 2}
